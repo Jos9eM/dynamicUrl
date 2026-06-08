@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enrutador de Imagen</title>
+    <script>
+        // 50% de probabilidad de éxito o fallo
+        const deberiaFallar = Math.random() < 0.5;
+
+        if (deberiaFallar) {
+            // Redirige a un recurso que SABES que no existe en tu propio sitio
+            // Esto provocará un error 404 real de Gitub PagesH
+            window.location.href = "./archivo_que_no_existe_seguro.jpg";
+        } else {
+            // Redirige a una imagen real y funcional
+            window.location.href = "https://centrodeayudaonline.clarochile.cl/content/mi-claro-app/BANNERS/Banner-Promov2.png";
+        }
+    </script>
+</head>
+<body>
+    <p>Cargando recurso...</p>
+</body>
+</html>
